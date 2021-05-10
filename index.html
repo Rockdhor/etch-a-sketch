@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1 id="header"></h1>
+    </div>
+    <div id="options">
+        <button data-mode="color" class="mode active">
+            
+            <input type="color" value="#000" id="color">
+        </button>
+
+        <button data-mode="rainbow" class="mode">
+            Rainbow
+        </button>
+
+        <button data-mode="darken" class="mode">
+            Darken
+        </button>
+
+        <button data-mode="lighten" class="mode">
+            Lighten
+        </button>
+    </div>
+    <div id="gridContainer">
+        
+    </div>
+    <div id="scaler">
+        <label for="size">Grid Size (between 1 and 64):</label><br>
+        <input type="range" id="size" name="size" value="16" min="1" max="64">
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
